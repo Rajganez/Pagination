@@ -1,0 +1,28 @@
+.container{
+    display: flex; flex-direction: column;
+    background-color: antiquewhite;
+}
+
+.val{
+    border: 1px solid grey; font-family: sans-serif;
+    padding: 1%; font-size: larger; color: cornflowerblue; background-color: white;
+}
+#page{
+    padding: 2%; margin-bottom: 10%;
+    background-color: antiquewhite; font-family: monospace; font-size: larger; 
+    font-weight: bolder;
+}
+#change{
+     margin-top: 26%;
+    color: black; font-family: sans-serif;
+}
+a:hover{
+    background-color: #347AB4; cursor: pointer;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+ }
+
