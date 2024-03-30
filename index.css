@@ -8,21 +8,16 @@
     padding: 1%; font-size: larger; color: cornflowerblue; background-color: white;
 }
 #page{
-    padding: 2%; color: rebeccapurple;
+     color: rebeccapurple;
     background-color: antiquewhite; font-family: monospace; font-size: small; 
-    font-weight: bolder;
+    font-weight: bold;
 }
 #change{
-     margin-top: 10%;margin-bottom: 10%;
+    margin-bottom: 1%;
     color: black; font-family: sans-serif;
 }
 a:hover{
     background-color: #347AB4; cursor: pointer;
 }
-footer {
-    position:absolute;
-    bottom:0;
-    width:90%;
-    height:60px;   /* Height of the footer */
- }
+
 

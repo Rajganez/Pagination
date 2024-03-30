@@ -23,9 +23,6 @@ for(let i = 0; i<=10; i++){
      division.append(button);  
     }
 }    
-let tab = document.createElement('table');
-
-
 document.body.append(division);
 
 const xhr = new XMLHttpRequest();
@@ -41,8 +38,9 @@ function buttons(value){
     let startInd = (value*10) - 10;
     let endInd = 10;
     let arr1 = arr.splice(startInd,endInd);
-    // let ol = `<ul>${check.map(check =>`<li>${check}</li>`).join(' ')}</ul>`;
-    page.innerHTML = JSON.stringify(arr1);
+    let check = Object.values(arr1);
+    let ol = `<ol style = "list-style: none">${check.map(check =>`<li>Id : ${check.id}</li><li>Name : ${check.name}<br/>Email : ${check.email} </li><br/> `).join(' ')}</ol>`;
+    page.innerHTML = ol;
     change.innerHTML = `<div>change : ${value}</div>`
     arr = arr2;
     }        
@@ -53,7 +51,9 @@ function previous(){
     let startInd = (previousNum*10) - 10;
     let endInd = 10;
     let arr1 = arr.splice(startInd,endInd); 
-    page.innerHTML = JSON.stringify(arr1);
+    let check = Object.values(arr1);
+    let ol = `<ol style = "list-style: none">${check.map(check =>`<li>Id : ${check.id}</li><li>Name : ${check.name}<br/>Email : ${check.email} </li><br/> `).join(' ')}</ol>`;
+    page.innerHTML = ol;
     change.innerHTML = `<div>change : ${previousNum}</div>`
     arr = arr2;
     
@@ -63,7 +63,9 @@ function first(){
     let first = localStorage.getItem('number');
     let arr2 = arr.slice(0,100);
     let arr1 = arr.splice(0,10); 
-    page.innerHTML = JSON.stringify(arr1);
+    let check = Object.values(arr1);
+    let ol = `<ol style = "list-style: none">${check.map(check =>`<li>Id : ${check.id}</li><li>Name : ${check.name}<br/>Email : ${check.email} </li><br/> `).join(' ')}</ol>`;
+    page.innerHTML = ol;
     change.innerHTML = `<div>change : ${first}</div>`
     arr = arr2;
 }
